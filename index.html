@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Calendar Digest — a single-user scheduling assistant</title>
+<style>
+  body { font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 44rem; margin: 3rem auto; padding: 0 1.25rem; color: #1b1b1b; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .sub { color: #666; margin-top: 0; }
+  code { background: #f2f2f2; padding: .1rem .3rem; border-radius: 3px; }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 3rem; color: #666; font-size: .9rem; border-top: 1px solid #eee; padding-top: 1rem; }
+</style>
+</head>
+<body>
+
+<h1>Calendar Digest</h1>
+<p class="sub">A single-user scheduling assistant.</p>
+
+<h2>What this is</h2>
+<p>Calendar Digest is a private automation that generates a short weekly schedule summary for the
+person who operates it. It reads the calendar accounts that its operator has explicitly connected
+and produces a plain summary of the coming week: what is scheduled on each day, the first and last
+commitment of each day, and where commitments overlap. The summary is delivered by email.</p>
+
+<h2>What it is not</h2>
+<ul>
+  <li>It is not a public service. There is no sign-up, no user accounts, and no other users.</li>
+  <li>It does not sell, share, republish, or aggregate calendar data.</li>
+  <li>It cannot read email. The only mail permission it requests is the ability to <em>send</em>.</li>
+  <li>It cannot modify anything: calendar access is read-only.</li>
+  <li>It has no analytics, no advertising, and no third-party trackers.</li>
+</ul>
+
+<h2>Google user data</h2>
+<p>This application requests exactly two Google permissions:</p>
+<ul>
+  <li><code>calendar.readonly</code> — to read event details on calendars the operator has connected,
+  so the weekly summary can be written.</li>
+  <li><code>gmail.send</code> — to deliver that summary by email.</li>
+</ul>
+<p>Its use of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User
+Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Documents</h2>
+<p><a href="privacy.html">Privacy policy</a> &middot; <a href="terms.html">Terms of use</a></p>
+
+<footer>Questions and contact: open an issue in this repository.</footer>
+
+</body>
+</html>
